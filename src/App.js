@@ -24,6 +24,7 @@ import Qcm3_1 from './Components/Chapters/Chapter3/Qcm3_1';
 import Qcm3_2 from './Components/Chapters/Chapter3/Qcm3_2';
 import Qcm3_3 from './Components/Chapters/Chapter3/Qcm3_3';
 import Qcm3_4 from './Components/Chapters/Chapter3/Qcm3_4';
+import Game from './Components/Chapters/Chapter3/Game';
 
 function App() {
   return (
@@ -59,6 +60,7 @@ function App() {
         <Route path="/Qcm3_2" element={<Qcm3_2 />} />
         <Route path="/Qcm3_3" element={<Qcm3_3 />} />
         <Route path="/Qcm3_4" element={<Qcm3_4 />} />
+        <Route path="/Game" element={<Game />} />
       </Routes>
     </div>
   );

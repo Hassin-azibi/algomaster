@@ -11,7 +11,7 @@ import {
 import "./mcqstyle.css";
 import { Routes, Route, Link } from "react-router-dom";
 
-class Qcm3_4 extends Component {
+class Qcm3_1 extends Component {
 
   constructor(props) {
     super(props);
@@ -44,15 +44,14 @@ class Qcm3_4 extends Component {
         <Card className="cardpostion mcqstyle">
           <CardBody>
             <CardTitle className="textstyleheader">
-              <h2>Q4.quel est le principe de l'algorithme de Prim?</h2>
+              <h2>Q1. un cocycle est :</h2>
               <br />
             </CardTitle>
             <Row>
               <Button
                 className="buttonstyle" value={this.state.response} name="1" onClick={this.onChange}
               >
-                1. Un maximum local est choisi à chaque étape selon des critères qui assurent qu'il fait 
-                  partie de la solution globale.
+                1. l'ensemble des arêtes incidentes à un ensemple de sommets du graphe.
               </Button>
             </Row>
             <br />
@@ -61,8 +60,7 @@ class Qcm3_4 extends Component {
 
                 className="buttonstyle" value={this.state.response} name="2" onClick={this.onChange}
               >
-                2. Un minimum local est choisi à chaque étape selon des critères qui assurent qu'il fait 
-                  partie de la solution globale.
+                2. l'ensemble des arêtes sortantes d'un ensemple de sommets du graphe.
               </Button>
             </Row>
             <br />
@@ -71,7 +69,7 @@ class Qcm3_4 extends Component {
 
                 className="buttonstyle" value={this.state.response} name="3" onClick={this.onChange}
               >
-                3.  c'est le même que Dijkstra.
+                3. un graphe orienté avec cycles.
               </Button>
             </Row>
             <br />
@@ -80,7 +78,7 @@ class Qcm3_4 extends Component {
 
                 className="buttonstyle" value={this.state.response} name="4" onClick={this.onChange}
               >
-                4.  Aucune de ces réponses.
+                4. Aucune de ces réponses.
               </Button>
             </Row>
             <br />
@@ -93,7 +91,7 @@ class Qcm3_4 extends Component {
             <br />
             <div style={{ width: "300px", right: "100px" }} >
               <nav>
-                <Link to="/Game" style={{ "font-size": "25px", "font-family": "Times New Roman", color: "green" }}><img style={{ height: "40px", width: "100px" }} id="profile-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Arrow_east.svg/2560px-Arrow_east.svg.png" /></Link>
+                <Link to="/Concept3_2" style={{ "font-size": "25px", "font-family": "Times New Roman", color: "green" }}><img style={{ height: "40px", width: "100px" }} id="profile-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Arrow_east.svg/2560px-Arrow_east.svg.png" /></Link>
               </nav>
             </div>
           </Row>
@@ -103,4 +101,4 @@ class Qcm3_4 extends Component {
   }
 }
 
-export default Qcm3_4;
+export default Qcm3_1;
